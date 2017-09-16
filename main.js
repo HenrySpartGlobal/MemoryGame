@@ -7,7 +7,14 @@ $(function(){
 });
 	$(document).ready(function(){
 	var app = {
-		cards: [1,1,2,2,3,3,4,4,5,5,6,6,7,7,], //array of cards 
+		cards: 
+		[1,1,
+		2,2,
+		3,3,
+		4,4,
+		5,5,
+		6,6,
+		7,7,], //array of cards 
 		init: function () {
 			app.shuffle()
 
@@ -41,18 +48,47 @@ $(function(){
 
 		},
 		clickEvents: function() {
-			$('.cards').on('click', function(){
-				$(this).html('<p>'+$(this).data('cardValue')+'</p>');
+			$('.cards').on('click', function() {
+				$(this).html('<p>'+$(this).data('cardValue')+'</p>').addClass('selected'); //adds the selected class
+				app.checkGame();
 
 			});
 
 
-		}
+		},
+		checkGame: function() {
+			if($('.selected').length === 2){
+				if($('.selected').first().data('cardValue') == $('.selected').last().data('cardValue')) { //checks to see if the first and last cards clicked, match. If they do remove the cards
+					$('.selected').each(function(){
+					console.log('MATCHED!');
+					$(this).animate({opacity: 0}).removeClass('notmatched'); //if the they match then hide them with opacity and remove notmatched from the class
 
+					});
+					$('.selected').each(function(){
+					$(this).removeClass('selected');
+				});
+					app.checkWin();
+				}else {
+					setTimeout(function(){
+						$('.selected').each(function(){
+							$(this).html('').removeClass('selected');
+						});
+					}, 1000);
+
+				}
+				
+			}
+		},
+		checkWin: function() {
+			if($('.notmatched').length === 0 ) {
+				$('.game').html("<h1> Game Over!</h1>");
+			}
+		}
 
 	};
 
 	app.init(); //init means initialisation 
+
 
 	});
 
