@@ -5,14 +5,21 @@ body {
 
 .background {
 	position: absolute;
-  width: 900px;
+  width: 1000px;
   height: 600px;
   top: 50%;
   left: 50%;
-  margin: -300px 0 0 -450px;
+  margin: -300px 0 0 -500px;
   background: #ffffff;
   border: 2px solid #660c12;
-  border-radius: 15px;}
+  border-radius: 15px;
+  z-index: 2;
+  padding-left: 45px;
+  padding-top: 16px;
+
+
+}
+
 
 h1 {
 
@@ -32,6 +39,7 @@ h1 {
   border: none;
   border-radius: 15px;
   box-shadow: 0 9px #999;
+  z-index: ;
 }
 
 .button {
@@ -39,6 +47,7 @@ h1 {
 	position: absolute;
 	top: 80%;
 	left: 42%;
+	z-index: 2;
 
 }
 
@@ -48,6 +57,36 @@ h1 {
   background-color: #ef1039;
   box-shadow: 0 5px #666;
   transform: translateY(4px);
+}
+
+
+.game {
+
+	position: absolute;
+    width: 1000px;
+    height: 600px;
+    top: 50%;
+    left: 50%;
+    margin: -300px 0 0 -500px;
+    background: blue;
+    border: 2px solid #660c12;
+    border-radius: 15px;
+    z-index: 1;
+    padding-left: 45px;
+    padding-top: 16px;
+
+}
+
+.cards {
+	float: left;
+    margin-top: 13px;
+    margin-left: -17px;
+    margin-right: 28px;
+    width: 120px;
+    height: 197px;
+    width: 131px;
+    background: green;
+    display: inline-block;
 }
 
 
