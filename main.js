@@ -67,7 +67,7 @@ $(function(){
 					$('.selected').each(function(){
 					$(this).removeClass('selected');
 				});
-					app.checkWin();
+					app.checkWin(); 
 				}else {
 					setTimeout(function(){
 						$('.selected').each(function(){
@@ -81,7 +81,7 @@ $(function(){
 		},
 		checkWin: function() {
 			if($('.notmatched').length === 0 ) {
-				$('.game').html("<h1> Game Over!</h1>");
+				$('.game').html("<h1> Game Over!</h1>"); //if there are 0 classes with the notmatched class then the game is over!
 			}
 		}
 
