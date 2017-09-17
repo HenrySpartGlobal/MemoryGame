@@ -68,7 +68,7 @@ h1 {
     top: 50%;
     left: 50%;
     margin: -300px 0 0 -500px;
-    background: blue;
+    background: #eaeabd;
     border: 2px solid #660c12;
     border-radius: 15px;
     z-index: 1;
@@ -85,8 +85,25 @@ h1 {
     width: 120px;
     height: 197px;
     width: 131px;
-    background: green;
+    background: #22d67f;
     display: inline-block;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 5px 5px 5px grey;
+}
+
+.cards:hover {
+
+	cursor: url(images/nat1058.cur), auto;
+	
+}
+
+.cards p {
+	font-size: 55px;
+	padding-top: 15px;
+	font-family: "Comics Sans Ms", sans-serif;
+
+
 }
 
 
@@ -96,9 +113,22 @@ h1 {
 	margin-left: 70px;
 	border-radius: 15px;
 
-
-
-
 }
 
+.fruit1 {
+
+	display: inline-block;
+    position: static;
+    margin-top: 352px;
+    float: left;
+}
+
+.fruit2 {
+
+	display: inline-block;
+    position: static;
+    margin-top: 323px;
+    margin-right: 60px;
+    float: right;
+}
 
