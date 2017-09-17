@@ -166,7 +166,9 @@ h1 {
 h1 {
 
 	color: blue;
-	font-size: 45px;
+	font-size: 80px;
+	text-align: center;
+	margin-top: 25%;
 
 }
 
@@ -174,6 +176,7 @@ span {
 
 	font-size: 45px;
 	font-family: Verdana, Geneva, sans-serif;
+	display: inline-block;
 
 }
 
@@ -181,11 +184,22 @@ span {
 
 	display: inline-block;
     margin-top: 33px;
-    margin-left: 266px;
+    margin-left: 370px;
     background: #4083ef;
     border-radius: 15px;
     padding: 10px 10px 10px 10px;
     box-shadow: 5px 5px 5px grey;
+
+}
+
+.clickCounter {
+
+	display: inline-block;
+    background: #4083ef;
+    border-radius: 15px;
+    padding: 10px 10px 10px 10px;
+    box-shadow: 5px 5px 5px grey;
+    margin-left: -14px;
 
 }
 

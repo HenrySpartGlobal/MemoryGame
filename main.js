@@ -87,7 +87,7 @@ $(function(){
 		//count down timer 
 		$(".start").click( function(){
 
-		var count=10;
+		var count=5;
 		var counter=setInterval(timer, 1000);
 		function timer() {
 			count=count-1;
