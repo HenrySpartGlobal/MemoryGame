@@ -78,11 +78,29 @@ $(function(){
 		},
 		checkWin: function() {
 			if($('.notmatched').length === 0 ) {
-				$('.game').html("<h1> Game Over!</h1>"); //if there are 0 classes with the notmatched class then the game is over!
+				$('.game').html("<h1> Game Over! </h1>").; //if there are 0 classes with the notmatched class then the game is over!
 			}
 		}
 
 	};
+
+		//count down timer 
+
+		var count=10;
+
+		var counter=setInterval(timer, 1000);
+
+
+		function timer() {
+			count=count-1;
+			if (count <=0)
+			{
+				clearInterval(counter);
+				$('.game').html("<h1> Game Over! </h1>");
+				return;
+			}
+			document.getElementById('timer').innerHTML=count + " seconds left!";
+		}
 
 	app.init(); //init means initialisation 
 

@@ -16,6 +16,7 @@ body {
   z-index: 2;
   padding-left: 45px;
   padding-top: 16px;
+  cursor: url(images/nat1058.cur), auto;
 
 
 }
@@ -115,6 +116,11 @@ h1 {
 
 }
 
+.title:hover {
+
+	transform: scale(1.20);
+}
+
 .fruit1 {
 
 	display: inline-block;
@@ -131,4 +137,56 @@ h1 {
     margin-right: 60px;
     float: right;
 }
+
+.fruit2:hover {
+
+	transform: scale(1.30);
+}
+
+.fruit1:hover {
+
+	transform: scale(1.30);
+}
+
+
+.desc {
+	display: inline-block;
+    margin-left: 21px;
+    padding-top: 10px;
+
+
+}
+
+.desc img {
+
+	height: 100px
+	width: 100px;
+}
+
+h1 {
+
+	color: blue;
+	font-size: 45px;
+
+}
+
+span {
+
+	font-size: 45px;
+	font-family: Verdana, Geneva, sans-serif;
+
+}
+
+.countdown {
+
+	display: inline-block;
+    margin-top: 33px;
+    margin-left: 266px;
+    background: #4083ef;
+    border-radius: 15px;
+    padding: 10px 10px 10px 10px;
+    box-shadow: 5px 5px 5px grey;
+
+}
+
 
