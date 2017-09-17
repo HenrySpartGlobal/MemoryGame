@@ -78,19 +78,17 @@ $(function(){
 		},
 		checkWin: function() {
 			if($('.notmatched').length === 0 ) {
-				$('.game').html("<h1> Game Over! </h1>").; //if there are 0 classes with the notmatched class then the game is over!
+				$('.game').html("<h1> Game Over! </h1>"); //if there are 0 classes with the notmatched class then the game is over!
 			}
 		}
 
 	};
 
 		//count down timer 
+		$(".start").click( function(){
 
 		var count=10;
-
 		var counter=setInterval(timer, 1000);
-
-
 		function timer() {
 			count=count-1;
 			if (count <=0)
@@ -101,6 +99,16 @@ $(function(){
 			}
 			document.getElementById('timer').innerHTML=count + " seconds left!";
 		}
+
+		});
+
+		//click counter 
+		var number = 0;
+		document.onclick = function(){
+			number++;
+			document.getElementById("clicks").innerHTML = number  + " click(s) ";
+		}
+
 
 	app.init(); //init means initialisation 
 
