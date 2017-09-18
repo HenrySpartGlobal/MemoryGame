@@ -1,6 +1,7 @@
 body {
 
 	background-color: #ef1039;
+
 }
 
 .background {
@@ -17,8 +18,6 @@ body {
   padding-left: 45px;
   padding-top: 16px;
   cursor: url(images/nat1058.cur), auto;
-
-
 }
 
 
@@ -96,9 +95,6 @@ h1 {
     background-position: center top;
 
 }
-
-
-
 
 .cards:hover {
 
@@ -187,8 +183,6 @@ h1 {
 
 }
 
-
-
 span {
 
 	font-size: 45px;
@@ -197,11 +191,11 @@ span {
 
 }
 
-.countdown {
 
-	display: inline-block;
-    margin-top: 33px;
-    margin-left: 370px;
+.countdown {
+    display: inline-block;
+    margin-bottom: 50px;
+    margin-left: 5px;
     background: #4083ef;
     border-radius: 15px;
     padding: 10px 10px 10px 10px;
@@ -220,6 +214,18 @@ span {
 
 }
 
+.pointCounter {
+
+  display: inline-block;
+    background: blue;
+    border-radius: 15px;
+    padding: 10px 10px 10px 10px;
+    box-shadow: 5px 5px 5px grey;
+    margin-left: 10px;
+    margin-top: 20px;
+
+}
+
 #shadow {
     border-radius: 50%;
     background-color: #CCC;
@@ -229,5 +235,3 @@ span {
     z-index:1;
     display:none;
 }
-
-

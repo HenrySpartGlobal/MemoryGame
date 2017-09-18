@@ -4,18 +4,22 @@ $(function(){
 
 	$("button").click(function() {
     $(".background").toggle();
-    $('x');
+
 });
-	$(document).ready(function(){
+
+
+$(document).ready(function(){
+	
+	var points = 0;
+
+	//all of  memory game inside in an object, start of object
 	var app = {
 		cards: 
 		[0,0,1,1,2,2,3,3,4,4,5,5,6,6,],
 		 //array of cards 
-		
+
 		init: function () {
 			app.shuffle();
-
-
 		},
 
 		shuffle: function() { //card shuffling function
@@ -28,9 +32,7 @@ $(function(){
 				app.cards[i] = app.cards[random];
 				app.cards[random] = temp; //stores the current index number into app.cards, then set it into the temp variable then set app.cards into random, and random back to temp 
 
-
-
-			}
+			};
 			app.setCards();
 			console.log('shuffled cards:  ' + app.cards); //shows how the cards were shuffled
 
@@ -58,7 +60,8 @@ $(function(){
 			if($('.selected').length === 2){
 				if($('.selected').first().data('cardValue') == $('.selected').last().data('cardValue')) { //checks to see if the first and last cards clicked, match. If they do remove the cards
 					$('.selected').each(function(){
-					console.log('MATCHED!');
+					points++; 
+					$('#points').html(points + " points");
 					$(this).animate({opacity: 0}).removeClass('notmatched'); //if the they match then hide them with opacity and remove notmatched from the class
 
 					});
@@ -84,9 +87,10 @@ $(function(){
 		}
 
 	};
+	//end of object
 
-		//count down timer 
-		$(".start").click( function(){
+	//count down timer 
+	$(".start").click( function(){
 
 		var count=60;
 		var counter=setInterval(timer, 1000);
@@ -102,39 +106,41 @@ $(function(){
 			document.getElementById('timer').innerHTML=count + " seconds left!";
 		}
 
-		});
+	});
 
-		//click counter 
-		var number = 0;
-		$('.cards').click(function(){
-			number++;
-			document.getElementById("clicks").innerHTML = number  + " click(s) "
-		});
-	
+	//click counter 
+	var number = 0;
+	$('.cards').click(function(){
+		number++;
+		document.getElementById("clicks").innerHTML = number  + " click(s) "
+	});
+
+	//Bounce animation
 	var bouncetime = 1000;
-    var ballheight = 280;
-    var ballsize = 80;
+    var fruitheight = 280;
+    var fruitsize = 80;
  
-    $('.fruit1').css({'width':ballsize, 'height':ballsize, 'margin-right':-(ballsize/2),'display':'block-inline', 'bottom':ballheight});
-    
+    $('.fruit1').css({'width':fruitsize, 'height':fruitsize, 'margin-right':-(fruitsize/2),'display':'block-inline', 'bottom':fruitheight});
+   
+   	fruitbounce();
  
-    ballbounce();
- 
-    function ballbounce() {
+    function fruitbounce() {
         $('.fruit1').animate({'bottom':20}, bouncetime, 'easeInQuad', function() {
-            $('.fruit1').animate({'bottom':ballheight}, bouncetime, 'easeOutQuad', function() {
-                ballbounce();
+            $('.fruit1').animate({'bottom':fruitheight}, bouncetime, 'easeOutQuad', function() {
+                fruitbounce();
             });
         });
-    }
 
+	};
 
 	app.init(); //init means initialisation 
 
-
-	});
+});
 
 });
+
+
+
 
 
 
