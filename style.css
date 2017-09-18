@@ -127,18 +127,26 @@ h1 {
 .fruit1 {
 
 	display: inline-block;
-    position: static;
+   position: absolute;
     margin-top: 352px;
-    float: left;
+    z-index:2;
+  
 }
 
 .fruit2 {
 
-	display: inline-block;
-    position: static;
-    margin-top: 323px;
-    margin-right: 60px;
-    float: right;
+     display: inline-block;
+    position: absolute;
+    margin-top: 338px;
+    margin-left: -834px;
+    float: left;
+    z-index: 2;
+
+}
+
+.fruit2 img {
+   width: 200px;
+    height: 150px;
 }
 
 .fruit2:hover {
@@ -154,7 +162,7 @@ h1 {
 
 .desc {
 	display: inline-block;
-    margin-left: 21px;
+    margin-left: 141px;
     padding-top: 10px;
 
 
@@ -206,6 +214,16 @@ span {
     box-shadow: 5px 5px 5px grey;
     margin-left: -14px;
 
+}
+
+#shadow {
+    border-radius: 50%;
+    background-color: #CCC;
+    position:absolute;
+    bottom:10px;
+    left:50%;
+    z-index:1;
+    display:none;
 }
 
 

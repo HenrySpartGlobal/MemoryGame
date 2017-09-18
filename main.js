@@ -110,6 +110,23 @@ $(function(){
 			number++;
 			document.getElementById("clicks").innerHTML = number  + " click(s) "
 		});
+	
+	var bouncetime = 1000;
+    var ballheight = 280;
+    var ballsize = 80;
+ 
+    $('.fruit1').css({'width':ballsize, 'height':ballsize, 'margin-right':-(ballsize/2),'display':'block-inline', 'bottom':ballheight});
+    
+ 
+    ballbounce();
+ 
+    function ballbounce() {
+        $('.fruit1').animate({'bottom':20}, bouncetime, 'easeInQuad', function() {
+            $('.fruit1').animate({'bottom':ballheight}, bouncetime, 'easeOutQuad', function() {
+                ballbounce();
+            });
+        });
+    }
 
 
 	app.init(); //init means initialisation 
