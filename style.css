@@ -94,7 +94,11 @@ h1 {
     background-image: url("images/Mr_Peach.png");
     background-repeat: no-repeat;
     background-position: center top;
+
 }
+
+
+
 
 .cards:hover {
 
@@ -137,8 +141,8 @@ h1 {
 
      display: inline-block;
     position: absolute;
-    margin-top: 338px;
-    margin-left: -834px;
+    margin-top: 330px;
+    margin-left: -810px;
     float: left;
     z-index: 2;
 
