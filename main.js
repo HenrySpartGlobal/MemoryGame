@@ -17,6 +17,7 @@ $(function(){
 
 
 		},
+
 		shuffle: function() { //card shuffling function
 			var random = 0;
 			var temp = 0;
@@ -31,7 +32,7 @@ $(function(){
 
 			}
 			app.setCards();
-			console.log('shuffled cards:  ' +app.cards); //shows how the cards were shuffled
+			console.log('shuffled cards:  ' + app.cards); //shows how the cards were shuffled
 
 		},
 		setCards: function () { //this function sets a random value to the cards
@@ -87,7 +88,7 @@ $(function(){
 		//count down timer 
 		$(".start").click( function(){
 
-		var count=5;
+		var count=60;
 		var counter=setInterval(timer, 1000);
 		function timer() {
 			count=count-1;
@@ -95,6 +96,7 @@ $(function(){
 			{
 				clearInterval(counter);
 				$('.game').html("<h1> Game Over! </h1>");
+
 				return;
 			}
 			document.getElementById('timer').innerHTML=count + " seconds left!";
@@ -104,10 +106,10 @@ $(function(){
 
 		//click counter 
 		var number = 0;
-		document.onclick = function(){
+		$('.cards').click(function(){
 			number++;
-			document.getElementById("clicks").innerHTML = number  + " click(s) ";
-		}
+			document.getElementById("clicks").innerHTML = number  + " click(s) "
+		});
 
 
 	app.init(); //init means initialisation 
