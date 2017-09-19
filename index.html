@@ -26,11 +26,22 @@
         <div class="button">
             <button class="start"> START </button>
         </div>
-        <audio autoplay>
+        <audio autoplay class="background_music">
             <source src="sounds/bg_music.mp3" type="audio/mpeg">
         </audio>
-    </div>
-    </div>
+        
+        <audio class="myAudioElement">
+            <source src="sounds/matched_sounds.wav">
+        </audio>
+        <audio class="gameover">
+            <source src="sounds/gameover.wav">
+        </audio>
+        <audio class="winner">
+            <source src="sounds/beep_up.wav">
+        </audio>
+        
+        
+        
     </div>
     <div class="game">
         <div class="cards notmatched"> </div>
@@ -47,11 +58,20 @@
         <div class="cards notmatched"> </div>
         <div class="cards notmatched"> </div>
         <div class="cards notmatched"> </div>
-        <div class="clickCounter"> <span id="clicks"> 0 </span>
+        
+        <div class="clickCounter"> 
+            <span id="clicks"> 0 </span>
         </div>
-        <div class="pointCounter"> <span id="points">  Points: 0 </span> </div>
-        <div class="countdown"> <span id="timer"> </span> </div>
+        <div class="pointCounter"> 
+            <span id="points">  Points: 0 </span> 
+        </div>
+        <div class="countdown"> 
+            <span id="timer"> </span> 
+        </div>
     </div>
+    <audio>
+        <source src="sounds/matched_sounds.wav"></source>
+    </audio>
 </body>
 
 </html>

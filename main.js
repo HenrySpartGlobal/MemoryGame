@@ -4,6 +4,7 @@ $(function() {
 
     $("button").click(function() {
         $(".background").toggle();
+        $(".background_music")[0].pause();
 
     });
 
@@ -60,6 +61,8 @@ $(function() {
                         $('.selected').each(function() {
                             points++;
                             $('#points').html(points + " points"); //add 2 points if the cards match
+                            $(".myAudioElement")[0].play();
+                            console.log('music played')
                             $(this).animate({
                                 opacity: 0
                             }).removeClass('notmatched'); //if the they match then hide them with opacity and remove notmatched from the class
@@ -80,16 +83,17 @@ $(function() {
 
                 }
             },
-            checkWin: function() {
+            checkWin: function() { //if there are 0 classes with the "notmatched" class then the game is over!
                 if ($('.notmatched').length === 0) {
                     $('.game').html("<h1> Well Done! </h1>" + "<h2> You matched all the cards!</h2>");
                     $('.game').prepend('<img src="images/Mr_Cherry.png"/>');
                     $('.game').append($('.button'));
+                    $(".winner")[0].play();
                     $('.button').click(function() {
                         location.reload();
                     });
 
-                    //if there are 0 classes with the "notmatched" class then the game is over!
+                    
                 }
             }
 
@@ -99,20 +103,21 @@ $(function() {
         //count down timer 
         $(".start").click(function() {
 
-            var count = 5; //60 seconds
+            var count = 60; //60 seconds
             var counter = setInterval(timer, 1000); //runs every one second
             function timer() {
                 count = count - 1;
                 if (count <= 0) {
                     clearInterval(counter);
                     $('.game').html("<h1> You ran out of Time! </h1>" + "<h2> Try again? </h2>");
+                    $(".gameover")[0].play(); //game over sounds
                     $('.game').append($('.button')); //restarts the game
                     $('.button').click(function() {
                         location.reload();
                     });
 
 
-                    // $('.game').prepend('<img src="images/game_over.jpg"/>');
+                     // $('.game').prepend('<img src="images/game_over.jpg"/>').css({})
 
                     return;
                 }
@@ -136,7 +141,7 @@ $(function() {
         $('.fruit1').css({
             'width': fruitsize,
             'height': fruitsize,
-            'margin-right': -(fruitsize / 2),
+            'margin-right': - (fruitsize / 2),
             'display': 'block-inline',
             'bottom': fruitheight
         });
