@@ -1,5 +1,6 @@
 body {
     background-color: #ef1039;
+    background-image: url(images/body.png)
 }
 .background {
     position: absolute;
@@ -147,14 +148,16 @@ span {
     display: inline-block;
     margin-bottom: 50px;
     margin-left: 5px;
-    background: #4083ef;
+    background: white;
     border-radius: 15px;
     padding: 10px 10px 10px 10px;
     box-shadow: 2px 2px 2px grey;
+
 }
+
 .clickCounter {
     display: inline-block;
-    background: #4083ef;
+    background: white;
     border-radius: 15px;
     padding: 10px 10px 10px 10px;
     box-shadow: 2px 2px 2px grey;
@@ -162,7 +165,7 @@ span {
 }
 .pointCounter {
     display: inline-block;
-    background: #4083ef;
+    background: white;
     border-radius: 15px;
     padding: 10px 10px 10px 10px;
     box-shadow: 2px 2px 2px grey;
@@ -192,3 +195,6 @@ button {
     z-index: 2;
     margin-left: 210px;
 }
+
+
+

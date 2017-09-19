@@ -83,7 +83,7 @@ $(function() {
                     $(".winner")[0].play();
                     $('.button').click(function() {
                         location.reload();
-                    }); 
+                    });
                 }
             }
         };
@@ -104,7 +104,7 @@ $(function() {
                     $('.button').click(function() {
                         location.reload();
                     });
-                     // $('.game').prepend('<img src="images/game_over.jpg"/>').css({})
+                    // $('.game').prepend('<img src="images/game_over.jpg"/>').css({})
 
                     return;
                 }
@@ -127,7 +127,7 @@ $(function() {
         $('.fruit1').css({
             'width': fruitsize,
             'height': fruitsize,
-            'margin-right': - (fruitsize / 2),
+            'margin-right': -(fruitsize / 2),
             'display': 'block-inline',
             'bottom': fruitheight
         });
@@ -146,6 +146,29 @@ $(function() {
             });
 
         };
+
+        //background scroll 
+
+        var scrollSpeed = 70;
+
+        // set the main position
+        var current = 0;
+
+        // set the direction
+        var direction = 'h';
+
+        function bgscroll() {
+
+            // 1 pixel row at a time
+            current -= 1;
+
+            // move the background with backgrond-position css properties
+            $('body').css("backgroundPosition", (direction == 'h') ? current + "px 0" : "0 " + current + "px");
+
+        }
+
+        //Calls the scrolling function repeatedly
+        setInterval(bgscroll, scrollSpeed);
 
         app.init(); //initialisation - runs the shuffle card function
 
