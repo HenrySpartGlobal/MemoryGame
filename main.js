@@ -5,9 +5,7 @@ $(function() {
     $("button").click(function() {
         $(".background").toggle();
         $(".background_music")[0].pause();
-
     });
-
 
     $(document).ready(function() {
 
@@ -30,7 +28,6 @@ $(function() {
                     temp = app.cards[i];
                     app.cards[i] = app.cards[random];
                     app.cards[random] = temp; //stores the current index number into app.cards, then set it into the temp variable then set app.cards into random, and random back to temp 
-
                 };
                 app.setCards();
                 console.log('shuffled cards:  ' + app.cards); //displays the order the cards were shuffled in
@@ -44,7 +41,6 @@ $(function() {
                 });
 
                 app.clickEvents();
-
             },
             clickEvents: function() {
                 $('.cards').on('click', function() {
@@ -52,8 +48,6 @@ $(function() {
                     app.checkGame();
 
                 });
-
-
             },
             checkGame: function() {
                 if ($('.selected').length === 2) {
@@ -78,9 +72,7 @@ $(function() {
                                 $(this).html('').removeClass('selected');
                             });
                         }, 1000);
-
                     }
-
                 }
             },
             checkWin: function() { //if there are 0 classes with the "notmatched" class then the game is over!
@@ -91,12 +83,9 @@ $(function() {
                     $(".winner")[0].play();
                     $('.button').click(function() {
                         location.reload();
-                    });
-
-                    
+                    }); 
                 }
             }
-
         };
         //end of object - End of Memory Game
 
@@ -115,15 +104,12 @@ $(function() {
                     $('.button').click(function() {
                         location.reload();
                     });
-
-
                      // $('.game').prepend('<img src="images/game_over.jpg"/>').css({})
 
                     return;
                 }
                 document.getElementById('timer').innerHTML = count + " seconds left!";
             }
-
         });
 
         //click counter 

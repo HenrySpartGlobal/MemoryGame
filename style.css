@@ -108,10 +108,9 @@ h1 {
 .fruit2 {
     display: inline-block;
     position: absolute;
-    margin-top: 330px;
-    margin-left: -810px;
-    float: left;
     z-index: 2;
+    margin-top: 311px;
+    margin-left: -794px;
 }
 .fruit2 img {
     width: 200px;
@@ -151,14 +150,14 @@ span {
     background: #4083ef;
     border-radius: 15px;
     padding: 10px 10px 10px 10px;
-    box-shadow: 5px 5px 5px grey;
+    box-shadow: 2px 2px 2px grey;
 }
 .clickCounter {
     display: inline-block;
     background: #4083ef;
     border-radius: 15px;
     padding: 10px 10px 10px 10px;
-    box-shadow: 5px 5px 5px grey;
+    box-shadow: 2px 2px 2px grey;
     margin-left: -14px;
 }
 .pointCounter {
@@ -166,9 +165,9 @@ span {
     background: #4083ef;
     border-radius: 15px;
     padding: 10px 10px 10px 10px;
-    box-shadow: 5px 5px 5px grey;
+    box-shadow: 2px 2px 2px grey;
     margin-left: 10px;
-    margin-top: 20px;
+    margin-top: 65px;
 }
 h2 {
     color: #15774d;
@@ -183,4 +182,13 @@ button {
 }
 .mute {
     display: inline-block;
+}
+.fruit3:hover {
+    transform: scale(1.30);
+}
+.fruit3 {
+    display: inline-block;
+    position: absolute;
+    z-index: 2;
+    margin-left: 210px;
 }

@@ -10,6 +10,7 @@
 </head>
 
 <body>
+    <!-- Game Images -->
     <div class="background">
         <div class="title">
             <img src="images/FruityFruitMatch_Title.png">
@@ -26,10 +27,12 @@
         <div class="button">
             <button class="start"> START </button>
         </div>
+
+        <!-- Game Audio -->
         <audio autoplay class="background_music">
             <source src="sounds/bg_music.mp3" type="audio/mpeg">
         </audio>
-        
+
         <audio class="myAudioElement">
             <source src="sounds/matched_sounds.wav">
         </audio>
@@ -39,9 +42,11 @@
         <audio class="winner">
             <source src="sounds/beep_up.wav">
         </audio>
-        
-        
-        
+        <audio>
+            <source src="sounds/matched_sounds.wav"></source>
+        </audio>
+
+        <!-- Playing cards -->
     </div>
     <div class="game">
         <div class="cards notmatched"> </div>
@@ -58,24 +63,21 @@
         <div class="cards notmatched"> </div>
         <div class="cards notmatched"> </div>
         <div class="cards notmatched"> </div>
-        
-        <div class="clickCounter"> 
+
+        <!-- Points and Counters -->
+        <div class="clickCounter">
             <span id="clicks"> 0 </span>
         </div>
-        <div class="pointCounter"> 
-            <span id="points">  Points: 0 </span> 
+        <div class="pointCounter">
+            <span id="points">  Points: 0 </span>
         </div>
-        <div class="countdown"> 
-            <span id="timer"> </span> 
+        <div class="countdown">
+            <span id="timer"> </span>
+        </div>
+        <div class="fruit3">
+            <img src="images/Mr_Lemon.png">
         </div>
     </div>
-    <audio>
-        <source src="sounds/matched_sounds.wav"></source>
-    </audio>
-</body>
-
-</html>
-
 </body>
 
 </html>
