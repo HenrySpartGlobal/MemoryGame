@@ -10,13 +10,12 @@ $(function(){
 
 $(document).ready(function(){
 	
-	var points = 0;
+	var points = 0; //points variable
 
-	//all of  memory game inside in an object, start of object
+	//start of an object for the memory game
 	var app = {
 		cards: 
-		[0,0,1,1,2,2,3,3,4,4,5,5,6,6,],
-		 //array of cards 
+		[0,0,1,1,2,2,3,3,4,4,5,5,6,6,], //array of cards 
 
 		init: function () {
 			app.shuffle();
@@ -27,14 +26,14 @@ $(document).ready(function(){
 			var temp = 0;
 			for(i = 0; i < app.cards.length; i++) { //iterates through the number of cards 14 times and each time it will present a random number
 				random = Math.round(Math.random() * i);
-				console.log(random); //shows random 14 numbers in the console log
+				console.log(random); //displays 14 random numbers in the console log
 				temp = app.cards[i];
 				app.cards[i] = app.cards[random];
 				app.cards[random] = temp; //stores the current index number into app.cards, then set it into the temp variable then set app.cards into random, and random back to temp 
 
 			};
 			app.setCards();
-			console.log('shuffled cards:  ' + app.cards); //shows how the cards were shuffled
+			console.log('shuffled cards:  ' + app.cards); //displays the order the cards were shuffled in
 
 		},
 		setCards: function () { //this function sets a random value to the cards
@@ -44,12 +43,12 @@ $(document).ready(function(){
 				app.cards[index];
 			});
 
-			app.clickEvents();
+			app.clickEvents(); 
 
 		},
 		clickEvents: function() {
 			$('.cards').on('click', function() {
-				$(this).html('<p>'+$(this).data('cardValue')+'</p>').addClass('selected'); //adds the selected class
+				$(this).html('<p>'+$(this).data('cardValue')+'</p>').addClass('selected'); //adds the "selected" class to clicked cards
 				app.checkGame();
 
 			});
@@ -61,7 +60,7 @@ $(document).ready(function(){
 				if($('.selected').first().data('cardValue') == $('.selected').last().data('cardValue')) { //checks to see if the first and last cards clicked, match. If they do remove the cards
 					$('.selected').each(function(){
 					points++; 
-					$('#points').html(points + " points");
+					$('#points').html(points + " points"); //add 2 points if the cards match
 					$(this).animate({opacity: 0}).removeClass('notmatched'); //if the they match then hide them with opacity and remove notmatched from the class
 
 					});
@@ -82,24 +81,24 @@ $(document).ready(function(){
 		},
 		checkWin: function() {
 			if($('.notmatched').length === 0 ) {
-				$('.game').html("<h1> Game Over! </h1>"); //if there are 0 classes with the notmatched class then the game is over!
+				$('.game').html("<h1> Well Done! </h1>" + "<h2> You matched all the cards!</h2>"); //if there are 0 classes with the "notmatched" class then the game is over!
 			}
 		}
 
 	};
-	//end of object
+	//end of object - End of Memory Game
 
 	//count down timer 
 	$(".start").click( function(){
 
-		var count=60;
-		var counter=setInterval(timer, 1000);
+		var count=5; //60 seconds
+		var counter=setInterval(timer, 1000); //runs every one second
 		function timer() {
 			count=count-1;
 			if (count <=0)
 			{
 				clearInterval(counter);
-				$('.game').html("<h1> Game Over! </h1>");
+				$('.game').html("<h2> You ran out of Time! :( </h2>");
 
 				return;
 			}
@@ -113,7 +112,7 @@ $(document).ready(function(){
 	$('.cards').click(function(){
 		number++;
 		document.getElementById("clicks").innerHTML = number  + " click(s) "
-	});
+	}); //counts everytime the user cicks on a card
 
 	//Bounce animation
 	var bouncetime = 1000;
@@ -133,7 +132,7 @@ $(document).ready(function(){
 
 	};
 
-	app.init(); //init means initialisation 
+	app.init(); //initialisation 
 
 });
 

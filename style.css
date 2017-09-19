@@ -99,6 +99,7 @@ h1 {
 .cards:hover {
 
 	cursor: url(images/nat1058.cur), auto;
+  transform: scale(1.15);
 	
 }
 
@@ -176,10 +177,11 @@ h1 {
 
 h1 {
 
-	color: blue;
-	font-size: 80px;
-	text-align: center;
-	margin-top: 25%;
+	   color: blue;
+    font-size: 70px;
+    text-align: center;
+    margin-top: 17%;
+    font-family: Verdana, Geneva, sans-serif;
 
 }
 
@@ -217,21 +219,21 @@ span {
 .pointCounter {
 
   display: inline-block;
-    background: blue;
+    background: #4083ef;
     border-radius: 15px;
     padding: 10px 10px 10px 10px;
     box-shadow: 5px 5px 5px grey;
     margin-left: 10px;
     margin-top: 20px;
+}
+
+h2 {
+
+    color: blue;
+    font-size: 50px;
+    text-align: center;
+    margin-top: 20%;
+    font-family: Verdana, Geneva, sans-serif;
 
 }
 
-#shadow {
-    border-radius: 50%;
-    background-color: #CCC;
-    position:absolute;
-    bottom:10px;
-    left:50%;
-    z-index:1;
-    display:none;
-}
