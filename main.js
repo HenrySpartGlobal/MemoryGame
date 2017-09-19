@@ -81,7 +81,14 @@ $(document).ready(function(){
 		},
 		checkWin: function() {
 			if($('.notmatched').length === 0 ) {
-				$('.game').html("<h1> Well Done! </h1>" + "<h2> You matched all the cards!</h2>"); //if there are 0 classes with the "notmatched" class then the game is over!
+				$('.game').html("<h1> Well Done! </h1>" + "<h2> You matched all the cards!</h2>");
+				$('.game').prepend('<img src="images/Mr_Cherry.png"/>');
+				$('.game').append($('.button'));
+				$('.button').click(function() {
+    			location.reload();
+					});
+
+				 //if there are 0 classes with the "notmatched" class then the game is over!
 			}
 		}
 
@@ -91,14 +98,21 @@ $(document).ready(function(){
 	//count down timer 
 	$(".start").click( function(){
 
-		var count=5; //60 seconds
+		var count=60; //60 seconds
 		var counter=setInterval(timer, 1000); //runs every one second
 		function timer() {
 			count=count-1;
 			if (count <=0)
 			{
 				clearInterval(counter);
-				$('.game').html("<h2> You ran out of Time! :( </h2>");
+				$('.game').html("<h1> You ran out of Time! </h1>" + "<h2> Try again? </h2>");
+				$('.game').append($('.button')); //restarts the game
+				$('.button').click(function() {
+    			location.reload();
+					});
+
+
+				// $('.game').prepend('<img src="images/game_over.jpg"/>');
 
 				return;
 			}
@@ -132,7 +146,7 @@ $(document).ready(function(){
 
 	};
 
-	app.init(); //initialisation 
+	app.init(); //initialisation - runs the shuffle card function
 
 });
 

@@ -180,8 +180,9 @@ h1 {
 	   color: blue;
     font-size: 70px;
     text-align: center;
-    margin-top: 17%;
+    margin-top: -2%;
     font-family: Verdana, Geneva, sans-serif;
+    padding-top: 30px;
 
 }
 
@@ -202,7 +203,6 @@ span {
     border-radius: 15px;
     padding: 10px 10px 10px 10px;
     box-shadow: 5px 5px 5px grey;
-
 }
 
 .clickCounter {
@@ -213,7 +213,6 @@ span {
     padding: 10px 10px 10px 10px;
     box-shadow: 5px 5px 5px grey;
     margin-left: -14px;
-
 }
 
 .pointCounter {
@@ -229,11 +228,25 @@ span {
 
 h2 {
 
-    color: blue;
+    color: #15774d;
     font-size: 50px;
     text-align: center;
-    margin-top: 20%;
+    margin-top: 10%;
     font-family: Verdana, Geneva, sans-serif;
+    margin-right: 55px;
+}
+
+
+button {
+    z-index: 2;
 
 }
+
+.mute {
+
+  display: inline-block;
+
+}
+
+
 
