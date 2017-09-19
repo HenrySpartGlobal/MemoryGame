@@ -1,68 +1,55 @@
 body {
-
-	background-color: #ef1039;
-
+    background-color: #ef1039;
 }
-
 .background {
-	position: absolute;
-  width: 1000px;
-  height: 600px;
-  top: 50%;
-  left: 50%;
-  margin: -300px 0 0 -500px;
-  background: #eaeabd;
-  border: 2px solid #660c12;
-  border-radius: 15px;
-  z-index: 2;
-  padding-left: 45px;
-  padding-top: 16px;
-  cursor: url(images/nat1058.cur), auto;
+    position: absolute;
+    width: 1000px;
+    height: 600px;
+    top: 50%;
+    left: 50%;
+    margin: -300px 0 0 -500px;
+    background: #eaeabd;
+    border: 2px solid #660c12;
+    border-radius: 15px;
+    z-index: 2;
+    padding-left: 45px;
+    padding-top: 16px;
+    cursor: url(images/nat1058.cur), auto;
 }
-
-
 h1 {
-
-	font-family: Verdana, Geneva, sans-serif;
-	text-align: center;
-	color: white;
+    font-family: Verdana, Geneva, sans-serif;
+    text-align: center;
+    color: white;
 }
-
 .start {
-  padding: 15px 25px;
-  font-size: 24px;
-  text-align: center;
-  cursor: pointer;
-  outline: none;
-  color: #fff;
-  background-color: #ef1039;
-  border: none;
-  border-radius: 15px;
-  box-shadow: 0 9px #999;
-  z-index: ;
+    padding: 15px 25px;
+    font-size: 24px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: #ef1039;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+    z-index: ;
 }
-
 .button {
-
-	position: absolute;
-	top: 80%;
-	left: 42%;
-	z-index: 2;
-
+    position: absolute;
+    top: 80%;
+    left: 42%;
+    z-index: 2;
 }
-
-.start:hover {background-color: #891b1b}
-
+.start:hover {
+    background-color: #891b1b
+}
 .start:active {
-  background-color: #ef1039;
-  box-shadow: 0 5px #666;
-  transform: translateY(4px);
+    background-color: #ef1039;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
 }
-
-
 .game {
-
-	position: absolute;
+    position: absolute;
     width: 1000px;
     height: 600px;
     top: 50%;
@@ -74,11 +61,9 @@ h1 {
     z-index: 1;
     padding-left: 45px;
     padding-top: 16px;
-
 }
-
 .cards {
-	float: left;
+    float: left;
     margin-top: 13px;
     margin-left: -17px;
     margin-right: 28px;
@@ -93,108 +78,72 @@ h1 {
     background-image: url("images/Mr_Peach.png");
     background-repeat: no-repeat;
     background-position: center top;
-
 }
-
 .cards:hover {
-
-	cursor: url(images/nat1058.cur), auto;
-  transform: scale(1.15);
-	
+    cursor: url(images/nat1058.cur), auto;
+    transform: scale(1.15);
 }
-
 .cards p {
-	font-size: 65px;
-	padding-top: 15px;
-	font-family: "Comics Sans Ms", sans-serif;
-  color: white;
-  -webkit-text-stroke: 2px black;
+    font-size: 65px;
+    padding-top: 15px;
+    font-family: "Comics Sans Ms", sans-serif;
+    color: white;
+    -webkit-text-stroke: 2px black;
 }
-
-
 .title {
-	z-index: 2;
-	display: inline-block;
-	margin-left: 70px;
-	border-radius: 15px;
-
+    z-index: 2;
+    display: inline-block;
+    margin-left: 70px;
+    border-radius: 15px;
 }
-
 .title:hover {
-
-	transform: scale(1.20);
+    transform: scale(1.20);
 }
-
 .fruit1 {
-
-	display: inline-block;
-   position: absolute;
+    display: inline-block;
+    position: absolute;
     margin-top: 352px;
-    z-index:2;
-  
+    z-index: 2;
 }
-
 .fruit2 {
-
-     display: inline-block;
+    display: inline-block;
     position: absolute;
     margin-top: 330px;
     margin-left: -810px;
     float: left;
     z-index: 2;
-
 }
-
 .fruit2 img {
-   width: 200px;
+    width: 200px;
     height: 150px;
 }
-
 .fruit2:hover {
-
-	transform: scale(1.30);
+    transform: scale(1.30);
 }
-
 .fruit1:hover {
-
-	transform: scale(1.30);
+    transform: scale(1.30);
 }
-
-
 .desc {
-	display: inline-block;
+    display: inline-block;
     margin-left: 141px;
     padding-top: 10px;
-
-
 }
-
 .desc img {
-
-	height: 100px
-	width: 100px;
+    height: 100px width: 100px;
 }
-
 h1 {
-
-	   color: blue;
+    color: blue;
     font-size: 70px;
     text-align: center;
     margin-top: -2%;
     font-family: Verdana, Geneva, sans-serif;
     padding-top: 30px;
-
 }
-
 span {
-
-	font-size: 45px;
-	font-family: Verdana, Geneva, sans-serif;
-	display: inline-block;
-
+    font-size: 45px;
+    font-family: Verdana, Geneva, sans-serif;
+    display: inline-block;
 }
-
-
 .countdown {
     display: inline-block;
     margin-bottom: 50px;
@@ -204,20 +153,16 @@ span {
     padding: 10px 10px 10px 10px;
     box-shadow: 5px 5px 5px grey;
 }
-
 .clickCounter {
-
-	display: inline-block;
+    display: inline-block;
     background: #4083ef;
     border-radius: 15px;
     padding: 10px 10px 10px 10px;
     box-shadow: 5px 5px 5px grey;
     margin-left: -14px;
 }
-
 .pointCounter {
-
-  display: inline-block;
+    display: inline-block;
     background: #4083ef;
     border-radius: 15px;
     padding: 10px 10px 10px 10px;
@@ -225,9 +170,7 @@ span {
     margin-left: 10px;
     margin-top: 20px;
 }
-
 h2 {
-
     color: #15774d;
     font-size: 50px;
     text-align: center;
@@ -235,18 +178,9 @@ h2 {
     font-family: Verdana, Geneva, sans-serif;
     margin-right: 55px;
 }
-
-
 button {
     z-index: 2;
-
 }
-
 .mute {
-
-  display: inline-block;
-
+    display: inline-block;
 }
-
-
-
