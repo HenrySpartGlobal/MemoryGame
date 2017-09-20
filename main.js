@@ -11,6 +11,8 @@ $(function() {
 
         var points = 0; //points variable
 
+        var counterOutside;
+
         //start of an object for the memory game
         var app = {
             cards: [0, 0, 1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 6, 6, ], //array of cards 
@@ -81,6 +83,7 @@ $(function() {
                     $('.game').prepend('<img src="images/Mr_Cherry.png"/>');
                     $('.game').append($('.button'));
                     $(".winner")[0].play();
+                    clearInterval(counterOutside);
                     $('.button').click(function() {
                         location.reload();
                     });
@@ -92,12 +95,12 @@ $(function() {
         //count down timer 
         $(".start").click(function() {
 
-            var count = 5; //60 seconds
-            var counter = setInterval(timer, 1000); //runs every one second
+            var count = 55; // time in seconds
+            counterOutside = setInterval(timer, 1000); //runs every one second
             function timer() {
                 count = count - 1;
                 if (count <= 0) {
-                    clearInterval(counter);
+                    clearInterval(counterOutside);
                     $('.game').html("<h1> You ran out of Time! </h1>" + "<h2> Try again? </h2>");
                     $(".gameover")[0].play(); //game over sounds
                     $('.game').append($('.button')); //restarts the game
