@@ -79,7 +79,8 @@ $(function() {
             },
             checkWin: function() { //if there are 0 classes with the "notmatched" class then the game is over!
                 if ($('.notmatched').length === 0) {
-                    $('.game').html("<h1> Well Done! </h1>" + "<h2> You matched all the cards!</h2>");
+                    $('.game').html("<h1> All Cards Matched! </h1>" + "<h2> CLICKS: " + number + "</h2>"); 
+                    $('.game').append($('clicks'));
                     $('.game').prepend('<img src="images/Mr_Cherry.png"/>');
                     $('.game').append($('.button'));
                     $(".winner")[0].play();
@@ -95,13 +96,13 @@ $(function() {
         //count down timer 
         $(".start").click(function() {
 
-            var count = 55; // time in seconds
+            var count = 5; // time in seconds
             counterOutside = setInterval(timer, 1000); //runs every one second
             function timer() {
                 count = count - 1;
                 if (count <= 0) {
                     clearInterval(counterOutside);
-                    $('.game').html("<h1> You ran out of Time! </h1>" + "<h2> Try again? </h2>");
+                    $('.game').html("<h1> You ran out of Time! </h1>" + "<h2> CLICKS: " + number + "</h2>");
                     $(".gameover")[0].play(); //game over sounds
                     $('.game').append($('.button')); //restarts the game
                     $('.button').click(function() {

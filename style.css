@@ -42,7 +42,7 @@ h1 {
     z-index: 2;
 }
 .start:hover {
-    background-color: #891b1b
+    background-color: #891b1b;
 }
 .start:active {
     background-color: #ef1039;
@@ -82,7 +82,7 @@ h1 {
 }
 .cards:hover {
     cursor: url(images/nat1058.cur), auto;
-    transform: scale(1.15);
+    transform: scale(1.10);
 }
 .cards p {
     font-size: 65px;
@@ -132,7 +132,7 @@ h1 {
     height: 100px width: 100px;
 }
 h1 {
-    color: blue;
+    color: #ef1039;
     font-size: 70px;
     text-align: center;
     margin-top: -2%;
@@ -148,7 +148,7 @@ span {
     display: inline-block;
     margin-bottom: 50px;
     margin-left: 5px;
-    background: white;
+    background: #22d67f;
     border-radius: 15px;
     padding: 10px 10px 10px 10px;
     box-shadow: 2px 2px 2px grey;
@@ -157,7 +157,7 @@ span {
 
 .clickCounter {
     display: inline-block;
-    background: white;
+    background: #22d67f;
     border-radius: 15px;
     padding: 10px 10px 10px 10px;
     box-shadow: 2px 2px 2px grey;
@@ -165,7 +165,7 @@ span {
 }
 .pointCounter {
     display: inline-block;
-    background: white;
+    background: #22d67f;
     border-radius: 15px;
     padding: 10px 10px 10px 10px;
     box-shadow: 2px 2px 2px grey;
