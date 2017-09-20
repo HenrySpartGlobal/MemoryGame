@@ -1,8 +1,8 @@
 $(function() {
 
-    //start button removes background and starts game
+        //start button removes background and starts game
 
-    $("button").click(function() {
+        $("button").click(function() {
         $(".background").toggle();
         $(".background_music")[0].pause();
     });
@@ -30,7 +30,7 @@ $(function() {
                     app.cards[random] = temp; //stores the current index number into app.cards, then set it into the temp variable then set app.cards into random, and random back to temp 
                 };
                 app.setCards();
-                console.log('shuffled cards:  ' + app.cards); //displays the order the cards were shuffled in
+                console.log('shuffled cards:  ' + app.cards); //displays the order the cards were shuffled in the console
 
             },
             setCards: function() { //this function sets a random value to the cards
@@ -92,7 +92,7 @@ $(function() {
         //count down timer 
         $(".start").click(function() {
 
-            var count = 60; //60 seconds
+            var count = 5; //60 seconds
             var counter = setInterval(timer, 1000); //runs every one second
             function timer() {
                 count = count - 1;
@@ -103,21 +103,21 @@ $(function() {
                     $('.game').append($('.button')); //restarts the game
                     $('.button').click(function() {
                         location.reload();
+                        
                     });
-                    // $('.game').prepend('<img src="images/game_over.jpg"/>').css({})
+                   $('.game').prepend('<img src="images/game_over.jpg"/>');
 
                     return;
                 }
                 document.getElementById('timer').innerHTML = count + " seconds left!";
             }
         });
-
         //click counter 
         var number = 0;
         $('.cards').click(function() {
             number++;
             document.getElementById("clicks").innerHTML = number + " click(s) "
-        }); //counts everytime the user cicks on a card
+        }); //counts everytime the user clicks on a card
 
         //Bounce animation
         var bouncetime = 1000;
@@ -146,32 +146,24 @@ $(function() {
             });
 
         };
-
         //background scroll 
-
         var scrollSpeed = 70;
-
         // set the main position
         var current = 0;
-
         // set the direction
         var direction = 'h';
 
         function bgscroll() {
-
-            // 1 pixel row at a time
+        // 1 pixel row at a time
             current -= 1;
-
             // move the background with backgrond-position css properties
             $('body').css("backgroundPosition", (direction == 'h') ? current + "px 0" : "0 " + current + "px");
-
         }
 
         //Calls the scrolling function repeatedly
         setInterval(bgscroll, scrollSpeed);
 
         app.init(); //initialisation - runs the shuffle card function
-
     });
 
 });
