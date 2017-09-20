@@ -30,19 +30,18 @@ Below are the first stages of the development. The home screen and play screen.
 
 I then began adding more features and decided on a theme.
 
-![Picture_1](project_one_progress_photos/Part_three.png)
-![Picture_2](project_one_progress_photos/Part_four.png)
+![Picture_1](project_one_progress_photos/part_three.png)
+![Picture_2](project_one_progress_photos/part_four.png)
 
 Finally deciding on a theme and polishing as I progressed.
 
-![Picture_1](project_one_progress_photos/Part_five.png)
-![Picture_2](project_one_progress_photos/Part_six.png)
+![Picture_1](project_one_progress_photos/part_five.png)
+![Picture_2](project_one_progress_photos/part_six.png)
 
 Final out come for home and play screens.
 
-![Picture_1](project_one_progress_photos/Part_seven.png)
-![Picture_2](project_one_progress_photos/Part_eight.png)
-
+![Picture_1](project_one_progress_photos/part_seven.png)
+![Picture_2](project_one_progress_photos/part_eight.png)
 
 
 # Credits 
