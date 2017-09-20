@@ -9,11 +9,11 @@ $(function() {
 
     $(document).ready(function() {
 
-        var points = 0; //points variable
+        var points = 0; //points
 
-        var counterOutside;
+        var counterOutside; //counter 
 
-        //start of an object for the memory game
+        //start of an 'object' for the memory game
         var app = {
             cards: [0, 0, 1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 6, 6, ], //array of cards 
 
@@ -57,23 +57,23 @@ $(function() {
                         $('.selected').each(function() {
                             points++;
                             $('#points').html(points + " points"); //add 2 points if the cards match
-                            $(".myAudioElement")[0].play();
+                            $(".myAudioElement")[0].play(); //play audio 
                             console.log('music played')
                             $(this).animate({
                                 opacity: 0
-                            }).removeClass('notmatched'); //if the they match then hide them with opacity and remove notmatched from the class
+                            }).removeClass('notmatched'); //if the they match then hide them with opacity and remove 'notmatched' from the class
 
                         });
                         $('.selected').each(function() {
                             $(this).removeClass('selected');
                         });
-                        app.checkWin();
+                        app.checkWin(); 
                     } else {
                         setTimeout(function() {
                             $('.selected').each(function() {
                                 $(this).html('').removeClass('selected');
                             });
-                        }, 1000);
+                        }, 1000); //removes the selected class, and turns them to their orignal class if 2 cards dont match
                     }
                 }
             },
@@ -85,7 +85,7 @@ $(function() {
                     $('.game').append($('.button'));
                     $(".winner")[0].play();
                     clearInterval(counterOutside);
-                    $('.button').click(function() {
+                    $('.button').click(function() { //start button reloads the page
                         location.reload();
                     });
                 }
@@ -96,11 +96,11 @@ $(function() {
         //count down timer 
         $(".start").click(function() {
 
-            var count = 5; // time in seconds
+            var count = 45; // time in seconds
             counterOutside = setInterval(timer, 1000); //runs every one second
             function timer() {
                 count = count - 1;
-                if (count <= 0) {
+                if (count <= 0) { //if timer hits zero do the following
                     clearInterval(counterOutside);
                     $('.game').html("<h1> You ran out of Time! </h1>" + "<h2> CLICKS: " + number + "</h2>");
                     $(".gameover")[0].play(); //game over sounds
@@ -121,7 +121,7 @@ $(function() {
         $('.cards').click(function() {
             number++;
             document.getElementById("clicks").innerHTML = number + " click(s) "
-        }); //counts everytime the user clicks on a card
+        }); //counts everytime the user clicks on a card - the "points" system
 
         //Bounce animation
         var bouncetime = 1000;

@@ -8,11 +8,23 @@ Although the game is simple enough to be played by everyone, the game aesthetics
 
 # Functionality and Implementation 
 
-This memory card game is a simple web hosted application, with sound, interactivity and animation. The functionality has been implemented using HTML CSS and JQUERY. Below is a link to the Demo site: 
+This memory card game is a simple web hosted application with sound, interactivity and animation. The game was created using HTML CSS and JQUERY. Below is a link to the Demo site: 
 
 //link here 
 
 If you decide to clone/download the project - Please open the Index.HTML file with your favourite Internet browser (Google Chrome is recommended).
+
+# Planning
+
+Before I began coding, I did some planning. Important such as layout and game play needed to be decided on before I moved on to coding. Having a plan allowed me to always refer back to my plan once I'd completed one major aspect.
+
+
+//include here images of photoshop initial plan 
+
+## Stage one of Styling 
+
+![Picture_1](/images/project_one_progress_photos/part_one.png)
+
 
 # Credits 
 
