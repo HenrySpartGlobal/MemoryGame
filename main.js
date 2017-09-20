@@ -151,7 +151,7 @@ $(function() {
 
         };
         //background scroll 
-        var scrollSpeed = 70;
+        var scrollSpeed = 75;
         // set the main position
         var current = 0;
         // set the direction

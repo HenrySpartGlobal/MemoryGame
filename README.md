@@ -12,18 +12,18 @@ This memory card game is a simple web hosted application with sound, interactivi
 
 //link here 
 
-If you decide to clone/download the project - Please open the Index.HTML file with your favourite Internet browser (Google Chrome is recommended).
+For cloning/downloading the project - Please open the Index.HTML file with your favourite Internet browser (Google Chrome is recommended).
 
 # Planning
 
-Before I began coding, I did some planning. Important such as layout and game play needed to be decided on before I moved on to coding. Having a plan allowed me to always refer back to my plan once I'd completed one major aspect.
+Before I began coding, I did some planning. Important elements such as layout and game play needed to be decided on before I moved on to development. Having a plan allowed me to always refer back to my plan once one major aspect was completed.
 
 
 //include here images of photoshop initial plan 
 
 ## Development
 
-Below are the first stages of the development. The home screen and play screen. 
+Below are the first stages of development. The home screen and play screen. 
 
 ![Picture_1](project_one_progress_photos/Part_one.png)
 ![Picture_2](project_one_progress_photos/Part_two.png)
@@ -33,7 +33,7 @@ I then began adding more features and decided on a theme.
 ![Picture_1](project_one_progress_photos/part_three.png)
 ![Picture_2](project_one_progress_photos/part_four.png)
 
-Finally deciding on a theme and polishing as I progressed.
+Added styling and improved aesthetics.
 
 ![Picture_1](project_one_progress_photos/part_five.png)
 ![Picture_2](project_one_progress_photos/part_six.png)
