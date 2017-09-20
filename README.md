@@ -21,9 +21,28 @@ Before I began coding, I did some planning. Important such as layout and game pl
 
 //include here images of photoshop initial plan 
 
-## Stage one of Styling 
+## Development
 
-![Picture_1](/images/project_one_progress_photos/part_one.png)
+Below are the first stages of the development. The home screen and play screen. 
+
+![Picture_1](project_one_progress_photos/Part_one.png)
+![Picture_2](project_one_progress_photos/Part_two.png)
+
+I then began adding more features and decided on a theme.
+
+![Picture_1](project_one_progress_photos/Part_three.png)
+![Picture_2](project_one_progress_photos/Part_four.png)
+
+Finally deciding on a theme and polishing as I progressed.
+
+![Picture_1](project_one_progress_photos/Part_five.png)
+![Picture_2](project_one_progress_photos/Part_six.png)
+
+Final out come for home and play screens.
+
+![Picture_1](project_one_progress_photos/Part_seven.png)
+![Picture_2](project_one_progress_photos/Part_eight.png)
+
 
 
 # Credits 
