@@ -21,7 +21,7 @@ Before I began coding, I did some planning. Important elements such as layout an
 
 //include here images of photoshop initial plan 
 
-## Development
+<!-- ## Development
 
 Below are the first stages of development. The home screen and play screen. 
 
@@ -35,13 +35,13 @@ I then began adding more features and decided on a theme.
 
 Added styling and improved aesthetics.
 
-![Picture_1](project_one_progress_photos/part_five.png)
-![Picture_2](project_one_progress_photos/part_six.png)
+<!-- ![Picture_1](project_one_progress_photos/part_five.png)
+![Picture_2](project_one_progress_photos/part_six.png) -->
 
-Final out come for home and play screens.
+<!-- Final out come for home and play screens. -->
 
-![Picture_1](project_one_progress_photos/part_seven.png)
-![Picture_2](project_one_progress_photos/part_eight.png)
+<!-- ![Picture_1](project_one_progress_photos/part_seven.png)
+![Picture_2](project_one_progress_photos/part_eight.png) --> <!-- --> -->
 
 
 # Credits 

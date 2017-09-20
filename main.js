@@ -12,6 +12,7 @@ $(function() {
         var points = 0; //points
 
         var counterOutside; //counter 
+        var pointsOutside; //points 
 
         //start of an 'object' for the memory game
         var app = {
@@ -56,7 +57,7 @@ $(function() {
                     if ($('.selected').first().data('cardValue') == $('.selected').last().data('cardValue')) { //checks to see if the first and last cards clicked, match. If they do remove the cards
                         $('.selected').each(function() {
                             points++;
-                            $('#points').html(points + " points"); //add 2 points if the cards match
+                            var pointsOutside = $('#points').html(points + " points"); //add 2 points if the cards match
                             $(".myAudioElement")[0].play(); //play audio 
                             console.log('music played')
                             $(this).animate({
@@ -79,7 +80,7 @@ $(function() {
             },
             checkWin: function() { //if there are 0 classes with the "notmatched" class then the game is over!
                 if ($('.notmatched').length === 0) {
-                    $('.game').html("<h1> All Cards Matched! </h1>" + "<h2> CLICKS: " + number + "</h2>"); 
+                    $('.game').html("<h1> All Cards Matched! </h1>" + "<h2> CLICKS: " + number + "<h2> POINTS: " + points + "</h2>"); 
                     $('.game').append($('clicks'));
                     $('.game').prepend('<img src="images/Mr_Cherry.png"/>');
                     $('.game').append($('.button'));
@@ -102,7 +103,7 @@ $(function() {
                 count = count - 1;
                 if (count <= 0) { //if timer hits zero do the following
                     clearInterval(counterOutside);
-                    $('.game').html("<h1> You ran out of Time! </h1>" + "<h2> CLICKS: " + number + "</h2>");
+                    $('.game').html("<h1> You ran out of Time! </h1>" + "<h2> CLICKS: " + number +  "<h2> POINTS: " + points + "</h2>");
                     $(".gameover")[0].play(); //game over sounds
                     $('.game').append($('.button')); //restarts the game
                     $('.button').click(function() {
