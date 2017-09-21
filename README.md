@@ -1,6 +1,6 @@
 # Memory Game - Fruity Fruit Match
 
-A fruit themed memory card game that requires the user to find 2 of the same matching cards in order to gain a point. A timer counting down from 60 seconds is included to provide a challenge. If the timer hits 0 and the player hasn't completed the game, they are prompted with a game over screen and can replay. Furthermore, the players clicks are tracked in order to allow the user to analyse how well they are doing. The fewer clicks the better. 
+A fruit themed memory card game that requires the user to find 2 of the same matching cards in order to gain a point. A timer counting down from 60 seconds is included to provide a challenge. If the timer hits 0 and the player hasn't completed the game, they are prompted with a game over screen and can replay. Furthermore, the players clicks are tracked in order to allow the user to analyse how well they are doing. The fewer clicks the better. The game is very simple, click two cards and try to find the two matching numbers! 
 
 # Target Audience 
 
@@ -17,31 +17,6 @@ For cloning/downloading the project - Please open the Index.HTML file with your 
 # Planning
 
 Before I began coding, I did some planning. Important elements such as layout and game play needed to be decided on before I moved on to development. Having a plan allowed me to always refer back to my plan once one major aspect was completed.
-
-
-//include here images of photoshop initial plan 
-
-<!-- ## Development
-
-Below are the first stages of development. The home screen and play screen. 
-
-![Picture_1](project_one_progress_photos/Part_one.png)
-![Picture_2](project_one_progress_photos/Part_two.png)
-
-I then began adding more features and decided on a theme.
-
-![Picture_1](project_one_progress_photos/part_three.png)
-![Picture_2](project_one_progress_photos/part_four.png)
-
-Added styling and improved aesthetics.
-
-<!-- ![Picture_1](project_one_progress_photos/part_five.png)
-![Picture_2](project_one_progress_photos/part_six.png) -->
-
-<!-- Final out come for home and play screens. -->
-
-<!-- ![Picture_1](project_one_progress_photos/part_seven.png)
-![Picture_2](project_one_progress_photos/part_eight.png) --> <!-- --> -->
 
 
 # Credits 
