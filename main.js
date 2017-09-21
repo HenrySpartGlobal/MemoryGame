@@ -1,8 +1,8 @@
 $(function() {
 
-        //start button removes background and starts game
+    //start button removes background and starts game
 
-        $("button").click(function() {
+    $("button").click(function() {
         $(".background").toggle();
         $(".background_music")[0].pause();
     });
@@ -68,7 +68,7 @@ $(function() {
                         $('.selected').each(function() {
                             $(this).removeClass('selected');
                         });
-                        app.checkWin(); 
+                        app.checkWin();
                     } else {
                         setTimeout(function() {
                             $('.selected').each(function() {
@@ -80,7 +80,7 @@ $(function() {
             },
             checkWin: function() { //if there are 0 classes with the "notmatched" class then the game is over!
                 if ($('.notmatched').length === 0) {
-                    $('.game').html("<h1> All Cards Matched! </h1>" + "<h2> CLICKS: " + number + "<h2> POINTS: " + points + "</h2>"); 
+                    $('.game').html("<h1> All Cards Matched! </h1>" + "<h2> CLICKS: " + number + "<h2> POINTS: " + points + "</h2>");
                     $('.game').append($('clicks'));
                     $('.game').prepend('<img src="images/Mr_Cherry.png"/>');
                     $('.game').append($('.button'));
@@ -103,14 +103,14 @@ $(function() {
                 count = count - 1;
                 if (count <= 0) { //if timer hits zero do the following
                     clearInterval(counterOutside);
-                    $('.game').html("<h1> You ran out of Time! </h1>" + "<h2> CLICKS: " + number +  "<h2> POINTS: " + points + "</h2>");
+                    $('.game').html("<h1> You ran out of Time! </h1>" + "<h2> CLICKS: " + number + "<h2> POINTS: " + points + "</h2>");
                     $(".gameover")[0].play(); //game over sounds
                     $('.game').append($('.button')); //restarts the game
                     $('.button').click(function() {
                         location.reload();
-                        
+
                     });
-                   $('.game').prepend('<img src="images/game_over.jpg"/>');
+                    $('.game').prepend('<img src="images/game_over.jpg"/>');
 
                     return;
                 }
@@ -159,7 +159,7 @@ $(function() {
         var direction = 'h';
 
         function bgscroll() {
-        // 1 pixel row at a time
+            // 1 pixel row at a time
             current -= 1;
             // move the background with backgrond-position css properties
             $('body').css("backgroundPosition", (direction == 'h') ? current + "px 0" : "0 " + current + "px");
