@@ -27,18 +27,17 @@ $(function() {
                 var temp = 0;
                 for (i = 0; i < app.cards.length; i++) { //iterates through the number of cards 14 times and each time it will present a random number
                     random = Math.round(Math.random() * i);
-                    console.log(random); //displays 14 random numbers in the console log
+                     //displays 14 random numbers in the console log
                     temp = app.cards[i];
                     app.cards[i] = app.cards[random];
                     app.cards[random] = temp; //stores the current index number into app.cards, then set it into the temp variable then set app.cards into random, and random back to temp 
                 };
                 app.setCards();
-                console.log('shuffled cards:  ' + app.cards); //displays the order the cards were shuffled in the console
+                //displays the order the cards were shuffled in the console
 
             },
             setCards: function() { //this function sets a random value to the cards
                 $('.cards').each(function(index) {
-
                     $(this).attr('data-card-value', app.cards[index]); //the .attr gets the attribute value on only the first element
                     app.cards[index];
                 });
@@ -59,7 +58,6 @@ $(function() {
                             points++;
                             var pointsOutside = $('#points').html(points + " points"); //add 2 points if the cards match
                             $(".myAudioElement")[0].play(); //play audio 
-                            console.log('music played')
                             $(this).animate({
                                 opacity: 0
                             }).removeClass('notmatched'); //if the they match then hide them with opacity and remove 'notmatched' from the class
